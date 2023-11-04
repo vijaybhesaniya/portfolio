@@ -182,7 +182,7 @@ i.fa-solid.fa-arrow-right-long {
 	cursor: pointer;
 }
 .close-button:hover{
-	color: red;
+	color: #ffbf35;
 }
 #popupImage {
 	display: block;
