@@ -357,19 +357,8 @@ i.fa-regular.fa-eye {
 .menu-bar-collapse .icon {
 	display: none;
   }
-  @media screen and (max-width: 889px){
-	.menu-icon-responsive {
-		display: block;
-	}
-	.project{
-		margin-top: 10px;
-	}
-	a.tabbing-button {
-		padding: 7px 9px;
-		width: max-content;
-	}
-  }
-  @media screen and (max-width: 850px) {
+  
+  @media screen and (max-width: 889px) {
 	.menu-bar-collapse a:not(:first-child) {
 		display: none;
 	}
@@ -382,6 +371,16 @@ i.fa-regular.fa-eye {
 	}
 	.menu-bar-collapse a:first-child{
 		margin-top: 65px;
+	}
+	 .menu-icon-responsive {
+		display: block;
+	}
+	.project{
+		margin-top: 10px;
+	}
+	a.tabbing-button {
+		padding: 7px 9px;
+		width: max-content;
 	}
 	.slash{
 		display: none;
