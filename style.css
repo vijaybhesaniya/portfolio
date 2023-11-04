@@ -629,7 +629,7 @@ select {
 		margin-top: 10px;
 	}
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 867px) {
 	.menu-bar-collapse a:not(:first-child) {
 		display: none;
 	}
