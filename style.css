@@ -62,6 +62,9 @@ nav a.span-a span:hover{
 .project a {
     margin: 0;
 }
+.icon-class-media {
+    margin-top: 20px;
+}
 .project{
 	margin-left: 20px;
 	display: flex;
