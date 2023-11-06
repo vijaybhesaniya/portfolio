@@ -391,7 +391,7 @@ i.fa-regular.fa-eye {
 		color: #ffbf35;
 	}
 	.tabbing{
-		gap:10;
+		gap:10px;
 	}
 	.project{
 		margin: 0;
@@ -411,16 +411,16 @@ i.fa-regular.fa-eye {
 		gap: 6px;
 		margin-bottom: 15px;
 	}
-   .menu-bar-collapse.responsive .project a{
-	   margin-top:0;
-   }
-   .menu-icon-responsive {
+       .menu-bar-collapse.responsive .project a{
+	        margin-top:0;
+        }
+       .menu-icon-responsive {
 		display: flex;
 		flex-direction: column;
 		padding: 0 52px;
 		align-items: center;
 		justify-content: center;
-   }
+         }
 }
 @media (max-width:670px) {
 	.gallery{
