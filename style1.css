@@ -358,7 +358,7 @@ i.fa-regular.fa-eye {
 	display: none;
   }
   
-  @media screen and (max-width: 889px) {
+  @media screen and (max-width: 867px) {
 	.menu-bar-collapse a:not(:first-child) {
 		display: none;
 	}
