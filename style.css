@@ -123,6 +123,9 @@ a.whatsapp svg{
 svg {
 	fill: #ffbf35;
 }
+.banner-section a:first-child {
+    margin: 0;
+}
 a.facebook:hover {
     background: #1977F2;
     border: 2px solid transparent;
