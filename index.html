@@ -276,12 +276,12 @@
           <div class="accordion-flush-contact-us">
             <h2 class="heading-text">Contact Us</h2>
             <div class="contact-us-form">
-              <form>
+              <form onsubmit="SendEmail(); reset(); return false;">
                 <input type="text" placeholder="Full Name..." id="name" required>
                 <input type="email" placeholder="Full Email Id..." id="email" required>
                 <input type="tel" placeholder="Full Mobile No..." id="number" pattern="[7-9]{1}[0-9]{9}"  required>
                 <textarea placeholder="Enter Address..." id="message" required></textarea>
-                <button type="button" id="btn" onclick="SendEmail()">Submit</button>
+                <button type="submit" id="btn">Submit</button>
               </form>
             </div>
             <div class="alert-danger-contact-us">
@@ -395,22 +395,18 @@
       <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script>
         function SendEmail(){
-          let name = document.getElementById("name").value;
-          let email = document.getElementById("email").value;
-          let number = document.getElementById("number").value;
-          let message = document.getElementById("message").value;
-
-          let body = "Name : " + name + "<br/> Email : " + email + "<br/> Phone No : " + number + "<br/> Message : " + message;
           Email.send({
             SecureToken : "d2c5338c-77df-4bc7-917d-3854fb6f02c7",
             To : 'forportfoliowork@gmail.com',
-            From : "forportfoliowork@gmail.com",
+            From : document.getElementById("email").value,
             Subject : "message from contact form",
-            Body : body
+            Body : "Name : " + document.getElementById("name").value 
+            + "<br> Email : " + document.getElementById("email").value
+             + "<br> Phone No : " + document.getElementById("number").value
+              + "<br> Message : " + document.getElementById("message").value
           }).then(
           message => alert("Message Succesfully Sent")
           );
-  
         }
       </script>
      
