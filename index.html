@@ -130,30 +130,30 @@
             <div class="skill-bar">
               <div class="skill">
                 <b>HTML</b>
-                <span>95%</span>
+                <span>80%</span>
                 <div class="html">
-                  <span style="width:95%"></span>
+                  <span style="width:80%"></span>
                 </div>
               </div>
               <div class="skill">
                 <b>CSS</b>
-                <span>90%</span>
-                <div class="css">
-                  <span style="width:90%"></span>
-                </div>
-              </div>
-              <div class="skill">
-                <b>JavaScript</b>
                 <span>85%</span>
-                <div class="javascript">
+                <div class="css">
                   <span style="width:85%"></span>
                 </div>
               </div>
               <div class="skill">
+                <b>JavaScript</b>
+                <span>75%</span>
+                <div class="javascript">
+                  <span style="width:75%"></span>
+                </div>
+              </div>
+              <div class="skill">
                 <b>Shopify Liquid Developer</b>
-                <span>95%</span>
+                <span>85%</span>
                 <div class="shopify">
-                  <span style="width:95%"></span>
+                  <span style="width:85%"></span>
                 </div>
               </div>
             </div>
@@ -357,7 +357,7 @@
       let options = {
         startAngle: -1.55,
         size: 100,
-        value: 0.95,
+        value: 0.80,
         fill: {gradient: ['#ffbf35']}
       }
       $(".circle .bar").circleProgress(options).on('circle-animation-progress',
@@ -365,13 +365,13 @@
         $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)));
       });
       $(".js .bar").circleProgress({
-        value: 0.90
+        value: 0.85
       });
       $(".node .bar").circleProgress({
-        value: 0.85
+        value: 0.75        
       });      
     $(".react .bar").circleProgress({
-        value: 0.95
+        value: 0.85
       });
 
       let mybutton = document.getElementById("myBtn");
