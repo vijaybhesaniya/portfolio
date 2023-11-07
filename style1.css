@@ -391,7 +391,9 @@ i.fa-regular.fa-eye {
 		color: #ffbf35;
 	}
 	.tabbing{
-		gap:10px;
+		column-gap: 10px;
+	    	flex-wrap: wrap;
+	    	row-gap: 40px;
 	}
 	.project{
 		margin: 0;
