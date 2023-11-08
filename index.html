@@ -396,9 +396,11 @@
       <script>
         function SendEmail(){
           Email.send({
-            SecureToken : "d2c5338c-77df-4bc7-917d-3854fb6f02c7",
+            Host : "smtp.elasticemail.com",
+            Username:"forportfoliowork@gmail.com",
+            Password:"EF62069777A837BDB3762AF324AF7E6024AD",
             To : 'forportfoliowork@gmail.com',
-            From : document.getElementById("email").value,
+            From : 'forportfoliowork@gmail.com',
             Subject : "message from contact form",
             Body : "Name : " + document.getElementById("name").value 
             + "<br> Email : " + document.getElementById("email").value
