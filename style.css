@@ -654,6 +654,9 @@ select {
 		position: absolute;
 		color: #ffbf35;
 	}
+	  .banner-section a{
+	  margin-left:6px;
+	  }
 	.project{
 		margin: 0;
 		display: contents;
