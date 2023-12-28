@@ -20,17 +20,17 @@
             </div>
             <div class="menu">
               <nav class="menu-bar-collapse" id="menu-bar">
-                <div class="menu-icon-responsive">
-                  <a href="index.html" class="active">Home</a>
-                  <a href="#about">About Us</a>
-                  <a href="#skill">My Skill</a>
-                  <a href="#experience" class="span-a"><span>Education</span> / <span>Experience</span></a>
-                  <a href="#service">My Services</a>
-                  <a href="#contact">Contact Us</a>
+                <div class="menu-icon-responsive" id="menu-link-bar">
+                  <a href="index.html" class="menu-text-link active">Home</a>
+                  <a href="#about" class="menu-text-link">About Us</a>
+                  <a href="#skill" class="menu-text-link">My Skill</a>
+                  <a href="#experience" class="span-a menu-text-link"><span>Education</span> / <span>Experience</span></a>
+                  <a href="#service" class="menu-text-link">My Services</a>
+                  <a href="#contact" class="menu-text-link">Contact Us</a>
                   <div class="project">
-                    <a href="myproject.html">My Project</a> 
+                    <a href="myproject.html" class="menu-text-link">My Project</a> 
                     <div class="slash">/</div>
-                    <a href="media/Vijay's Resume .pdf" target="_blank">Resume</a>
+                    <a href="media/Vijay's Resume .pdf" target="_blank" class="menu-text-link">Resume</a>
                   </div>
                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -392,6 +392,18 @@
         document.documentElement.scrollTop = 0;
       }
       </script>
+    <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("menu-link-bar");
+    var btns = header.getElementsByClassName("menu-text-link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
       <script src="script.js"></script>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script>
