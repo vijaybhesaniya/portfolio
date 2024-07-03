@@ -181,6 +181,9 @@ a.github:hover svg{
     align-items: center;
     padding: 75px 0;
 }
+.accrodin-section-about .about-us-accrodin{
+    width:100%;
+}
 .about-us h3 span{
 	color:#ffbf35;
 	font-weight:700;
